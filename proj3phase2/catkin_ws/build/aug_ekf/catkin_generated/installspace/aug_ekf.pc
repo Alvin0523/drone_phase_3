@@ -1,0 +1,8 @@
+prefix=/home/wm_u26/hkust/elec5660_proj3/proj3phase2/catkin_ws/install
+
+Name: aug_ekf
+Description: Description of aug_ekf
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: stereo_vo

@@ -18,14 +18,14 @@
 
 #include "pnp.hpp"
 
-using namespace cv;
 using namespace aruco;
+using namespace cv;
 using namespace Eigen;
 using std::string;
 using std::vector;
 
 //global varialbles for aruco detector
-aruco::CameraParameters CamParam;
+::aruco::CameraParameters CamParam;
 MarkerDetector MDetector;
 vector<Marker> Markers;
 float MarkerSize = 0.20 / 1.5 * 1.524;

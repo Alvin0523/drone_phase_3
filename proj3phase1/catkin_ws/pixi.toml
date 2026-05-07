@@ -27,6 +27,8 @@ eigen = "3.*"
 [tasks]
 build = {cmd = "catkin_make", description = "Build the ROS workspace"}
 clean = {cmd = "rm -rf build devel", description = "Clean build artifacts (build, devel directories)"}
+launch = {cmd = "roslaunch ekf A3.launch", description = "Launch EKF + tag_detector + rosbag + RViz"}
+download-bag = {cmd = "mkdir -p src/ekf/bag && wget -N -P src/ekf/bag https://repo.hkust-uav.org/artifactory/generic-artifactory/rosbag/elec5660/ekf_A3.bag", description = "Download ekf_A3.bag into src/ekf/bag/"}
 
 # Scripts to source on environment activation.
 
