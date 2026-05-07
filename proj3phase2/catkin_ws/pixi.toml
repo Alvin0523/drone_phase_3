@@ -28,11 +28,10 @@ ros-noetic-std-msgs = "*"
 ros-noetic-visualization-msgs = "*"
 
 [tasks]
-build = {cmd = "colcon build", description = "Build the ROS workspace"}
-test = {cmd = "colcon test", description = "Run tests for the workspace"}
-clean = {cmd = "rm -rf build install log", description = "Clean build artifacts (build, install, log directories)"}
+build = {cmd = "catkin_make", description = "Build the ROS workspace"}
+clean = {cmd = "rm -rf build devel", description = "Clean build artifacts (build, devel directories)"}
 
-# Scripts to source on environment activation, found after first colcon build.
+# Scripts to source on environment activation.
 
 [activation]
-scripts = ["install/setup.bash"]
+scripts = ["devel/setup.bash"]

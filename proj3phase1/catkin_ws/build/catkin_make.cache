@@ -1,0 +1,2 @@
+ekf:tag_detector
+-DCATKIN_DEVEL_PREFIX=/home/wm_u26/hkust/elec5660_proj3/proj3phase1/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/wm_u26/hkust/elec5660_proj3/proj3phase1/catkin_ws/install -G Unix Makefiles

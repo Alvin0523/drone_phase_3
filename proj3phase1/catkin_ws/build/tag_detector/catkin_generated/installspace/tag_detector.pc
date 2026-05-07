@@ -1,0 +1,8 @@
+prefix=/home/wm_u26/hkust/elec5660_proj3/proj3phase1/catkin_ws/install
+
+Name: tag_detector
+Description: Description of tag_detector
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
