@@ -1,0 +1,32 @@
+[workspace]
+name = "catkin_ws"
+channels = ["https://prefix.dev/robostack-noetic", "https://prefix.dev/conda-forge"]
+platforms = ["linux-64"]
+
+[dependencies]
+# Base ROS dependencies
+ros-noetic-ros-base = "*"
+pkg-config = "*"
+compilers = "*"
+make = "*"
+ninja = "*"
+
+# Build tools
+colcon-common-extensions = "*"
+cmake = "<4"
+
+# Workspace dependencies
+ros-noetic-catkin = "*"
+ros-noetic-nav-msgs = "*"
+ros-noetic-roscpp = "*"
+ros-noetic-sensor-msgs = "*"
+
+[tasks]
+build = {cmd = "colcon build", description = "Build the ROS workspace"}
+test = {cmd = "colcon test", description = "Run tests for the workspace"}
+clean = {cmd = "rm -rf build install log", description = "Clean build artifacts (build, install, log directories)"}
+
+# Scripts to source on environment activation, found after first colcon build.
+
+[activation]
+scripts = ["install/setup.bash"]
